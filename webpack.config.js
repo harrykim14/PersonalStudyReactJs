@@ -15,10 +15,10 @@ module.exports ={
     },
 
     module : {
-        loaders : [
+        rules : [
             {
-                test : /\.js/,
-                rules : 'babel-loader',
+                test : /\.js$/,
+                loader : 'babel-loader',
                 exclude : /node_modules/,
                 query : {
                     cacheDirectory : true,
