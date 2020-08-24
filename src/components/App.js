@@ -1,5 +1,4 @@
 import React from 'react';
-import 'App.css';
 
 class App extends React.Component{
     render(){
@@ -11,8 +10,14 @@ class App extends React.Component{
         }
         
         return (
-            <input type ="text" style = {style}/>
-            /* 태그는 항상 닫아줘야 함 */
+            <component>
+            
+            <input type ="text" style = { style }/>
+            <div>
+                <h1>리액트</h1>
+            </div>
+            
+            </component>
         );
     }
 }
